@@ -7,6 +7,7 @@ name: {
     required: true
 }
 })
+///addded not$ git commit -m "Added function to allow Users to say 'Hello World'"
 
 authorSchema.pre('remove', function(next) {
     Book.find({ author: this.id}, (err, books) => {
